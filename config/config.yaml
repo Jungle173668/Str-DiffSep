@@ -1,0 +1,31 @@
+defaults:
+    - _self_
+    - datamodule: default
+    - model: skim
+    - trainer: allgpus
+    # - experiment: null
+ 
+seed: 64736289
+name: default  # experiment name
+train: true
+test: false
+# resume_from_checkpoint: ""
+
+path:
+    exp_root: exp
+    datasets:
+        wsj0_mix: /research/milsrg1/user_workspace/cz426/Streamable_diffusion/datasets/wsj0-2mix
+        # wsj0_mix: data/wsj0-2mix
+
+    figures: figures
+    
+hydra:
+    run:
+        dir: ${path.exp_root}/${name}/${now:%Y-%m-%d}_${now:%H-%M-%S}_${hydra.job.override_dirname}
+    job:
+        config:
+            override_dirname:
+                kv_sep: '-'
+                item_sep: '_'
+                exclude_keys: 
+                    - path.exp_root

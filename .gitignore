@@ -1,0 +1,6 @@
+exp/
+__pycache__/
+*.log
+*.ckpt
+*.pt
+*.pth
