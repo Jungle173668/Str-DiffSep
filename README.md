@@ -1,6 +1,6 @@
 # Str-DiffSep: Streamable Diffusion Model for Speech Separation
 
-This is the repo for Mphil in MLMI project.  
+This is the repo for Streamable Diffusion Model for Speech Separation.  
 
 Use `dit_new.yml` to create conda environment.  
 
