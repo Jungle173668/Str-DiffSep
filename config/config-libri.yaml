@@ -6,7 +6,8 @@ path:
   exp_root: exp
   datasets:
     wsj0_mix: /datasets/wsj0-2mix  # change to your path
-    LibriMix: /data/milsrg1/corpora/LibriMix  # change to your path
+    LibriMix: /datasets/LibriMix  # change to your path
+    # LibriMix: /data/milsrg1/corpora/LibriMix
   figures: figures
 datamodule:
   train:
