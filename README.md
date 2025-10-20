@@ -95,3 +95,6 @@ LibriMix/
 Use `python train.py` to start training the model.  
 
 Use `python envaluate.py` to select sampler, test the model and get inference results.  
+
+---
+Thanks for the code structure provided by [DiffSep](https://github.com/fakufaku/diffusion-separation).
